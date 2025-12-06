@@ -73,8 +73,8 @@ This repository contains the source files (.c) implementing the functions, the p
 Clone the repository and build the library using the provided Makefile:
 
 ```bash
-git clone git@github.com:42learners/Common-Core---Libft-7616ef44-5652-4aaf-9f44-381c6952f678.git
-cd Common-Core---Libft-7616ef44-5652-4aaf-9f44-381c6952f678
+git clone git@github.com:MisterJMAL/Libft_42.git
+cd Libft_42
 make
 ```
 
