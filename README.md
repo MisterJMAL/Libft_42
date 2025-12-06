@@ -66,6 +66,14 @@ This repository contains the source files (.c) implementing the functions, the p
 | **ft_lstiter** | iterates through the list `lst` and applies the function `f` to the content of each node. |
 | **ft_lstmap** | iterates through the list `lst`, applies the function `f` to each node's content, and creates a new list resulting of the succesive applications of the function `f`. |
 
+### Printf
+
+- Supported conversions: `%`, `c`, `s`, `p`, `i`, `d`, `u`, `x`, `X`
+
+| **Function** | **Description** |
+| ------------ | --------------- |
+| **ft_printf** | Writes the C string pointed to by `format` to standard output (`stdout`). If `format` includes conversion specifiers (subsequences beginning with `%`), the additional arguments are formatted and inserted in place of their respective specifiers. |
+
 ## Instructions
 
 ### Installation
@@ -97,6 +105,7 @@ To use the library in your C project, include `libft.h` and link against `libft.
 - man pages for standard C functions (e.g., `man 3 strcpy`, `man 3 malloc`) to compare behavior.
 - Testers:
 	- Tripouille — libftTester: https://github.com/Tripouille/libftTester
+	- Tripouille — printfTester: https://github.com/Tripouille/printfTester
 	- Blaeste — libfterator: https://github.com/Blaeste/libfterator
 	- jtoty — Libftest: https://github.com/jtoty/Libftest
 - Guide for writing good READMEs: https://www.makeareadme.com/

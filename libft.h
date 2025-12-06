@@ -6,7 +6,7 @@
 /*   By: jleclerc <jleclerc@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:15:42 by jleclerc          #+#    #+#             */
-/*   Updated: 2025/11/20 14:54:51 by jleclerc         ###   ########.fr       */
+/*   Updated: 2025/12/06 16:54:06 by jleclerc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-//Part 1
+//Madatory Functions
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -40,7 +40,7 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *str);
 
-//Part 2
+//Additional Functions
 char	*ft_substr(char const *str, unsigned int start, size_t len);
 char	*ft_strjoin(char const *str1, char const *str2);
 char	*ft_strtrim(char const *str1, char const *set);
@@ -53,7 +53,7 @@ void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-//Part 3
+//Linked List
 typedef struct s_list
 {
 	void			*content;
@@ -68,5 +68,11 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//Printf
+int		ft_printf(const char *format, ...);
+
+//GNL
+
 
 #endif
