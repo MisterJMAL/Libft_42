@@ -6,7 +6,7 @@
 /*   By: jleclerc <jleclerc@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:15:42 by jleclerc          #+#    #+#             */
-/*   Updated: 2025/12/06 16:54:06 by jleclerc         ###   ########.fr       */
+/*   Updated: 2025/12/11 16:40:30 by jleclerc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 //Madatory Functions
 int		ft_isalpha(int c);
@@ -73,6 +74,16 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_printf(const char *format, ...);
 
 //GNL
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
+# ifndef SEP
+#  define SEP '\n'
+# endif
+
+char	*ft_strjoin_sep(char const *str1, char const *str2);
+char	*fill_line(int fd, char *line, char *buffer);
+char	*get_next_line(int fd);
 
 #endif

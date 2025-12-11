@@ -74,6 +74,14 @@ This repository contains the source files (.c) implementing the functions, the p
 | ------------ | --------------- |
 | **ft_printf** | Writes the C string pointed to by `format` to standard output (`stdout`). If `format` includes conversion specifiers (subsequences beginning with `%`), the additional arguments are formatted and inserted in place of their respective specifiers. |
 
+### Get_next_line
+
+| **Function** | **Description** |
+| ------------ | --------------- |
+| **fill_line**      | Reads from file descriptor `fd` and fills the line buffer using `buffer`. |
+| **get_next_line**  | Reads and returns the next line from the file descriptor `fd` on each call. |
+
+
 ## Instructions
 
 ### Installation
@@ -101,11 +109,12 @@ To use the library in your C project, include `libft.h` and link against `libft.
 
 ## Resources
 
-- 42 school Libft subject and rules.
+- 42 school subjects and rules.
 - man pages for standard C functions (e.g., `man 3 strcpy`, `man 3 malloc`) to compare behavior.
 - Testers:
 	- Tripouille — libftTester: https://github.com/Tripouille/libftTester
 	- Tripouille — printfTester: https://github.com/Tripouille/printfTester
+	- Tripouille — gnlTester: https://github.com/Tripouille/gnlTester
 	- Blaeste — libfterator: https://github.com/Blaeste/libfterator
 	- jtoty — Libftest: https://github.com/jtoty/Libftest
 - Guide for writing good READMEs: https://www.makeareadme.com/
