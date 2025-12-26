@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -ggdb
 SRC = 	ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
